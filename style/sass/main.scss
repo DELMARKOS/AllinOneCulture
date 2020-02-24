@@ -1,0 +1,56 @@
+/*
+Author: Mark Delaportas
+
+********************
+This is an implementation of the AllinOneCulture website
+********************
+*/
+
+*{
+    margin: 0%;
+    padding: 0%;   
+}
+
+@media (orientation: landscape){
+    .app{
+        background-image: url("../../img/initial.png");
+        background-size: cover;
+    
+        .container-fluid{
+            background-color: rgba(130, 121, 121, .77);
+            width: 100%;
+            height: 100vh;
+    
+            .text{
+                position: relative;
+                .allinoneculture{
+                    text-align: center;
+                    font-size: 10vw;
+                    letter-spacing: .05em;
+                    font-weight: lighter;
+                    line-height: 2.5em;
+                }
+                .afewords{
+                    text-align: center;
+                    font-weight: lighter;
+                    font-size: 1.5em;
+                    margin: 0 10%;
+                }
+            }
+            .sections{
+                line-height: 15em;
+                list-style-type: none;
+                text-align: center;
+    
+                .navbar-item{
+                    display: inline-block;
+    
+                    a{
+                        margin: 0 10em;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
