@@ -3,14 +3,35 @@
 .app{
     background-color: $primary-color;
     height: 100vh;
-    font-family: montserrat,sans-serif;
-    font-weight: 200;
-    font-style: normal;
 
     .allincneculture{
-        .img{
-            width: 25px;
-            height: 25px;
+        .logo{
+            background-image: url("/img/logo.svg");
+            background-size: cover;
+            height: 10vh;
+            width: 20vw;
         }
+    }
+
+    .home{
+        font-family: montserrat,sans-serif;
+        text-align: center;
+
+
+        h1{
+            letter-spacing: 0%;
+            font-weight: 400;
+            font-style: normal;
+        }
+    
+        .introtext{
+            font-weight: 200;
+            font-style: initial;
+        }
+    }
+
+    .bottom{
+        position: fixed;
+        bottom: 0;
     }
 }
