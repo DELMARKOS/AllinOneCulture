@@ -1,8 +1,15 @@
 $primary-color: #827979;
-$text-color: #273A3E;
+$text-color-light: #273A3E;
+$text-color-dark: #DFD2D2;
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+
+@function setTextColor($color){
+    @if (lightness($color) > 40%){@return $text-color-light;}
+    @else{@return $text-color-dark;}
 }

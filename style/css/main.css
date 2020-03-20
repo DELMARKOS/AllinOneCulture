@@ -3,34 +3,44 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+.home {
+  height: 100vh;
+  padding-top: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: montserrat,sans-serif;
+  color: #273A3E;
 }
 
 .app {
-  background-color: #827979;
-  height: 100vh;
+  background: radial-gradient(rgba(130, 121, 121, 0.9), rgba(130, 121, 121, 0.6)), url("../../img/0.png");
+  background-size: cover;
 }
 
 .app .allincneculture .logo {
-  background-image: url("/img/logo.svg");
+  background-image: url("../../img/logo.svg");
   background-size: cover;
   height: 10vh;
   width: 20vw;
 }
 
-.app .home {
-  font-family: montserrat,sans-serif;
-  text-align: center;
-}
-
 .app .home h1 {
-  letter-spacing: 0%;
   font-weight: 400;
   font-style: normal;
+  font-size: 2.5em;
+  letter-spacing: .1rem;
 }
 
 .app .home .introtext {
+  padding-top: 4em;
   font-weight: 200;
   font-style: initial;
+  font-size: 1.2em;
 }
 
 .app .bottom {
