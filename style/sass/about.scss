@@ -1,0 +1,11 @@
+@import 'config';
+
+.app{
+    main{
+        .social-icons{
+            .fab{
+                @include transition-ease;
+            }
+        }
+    }
+}
