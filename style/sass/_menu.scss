@@ -1,0 +1,52 @@
+.menu-btn{
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    right: 1rem;
+    width: 28px;//fit-content;
+    height: 28px;//fit-content;
+
+    cursor: pointer;
+    @include transition-ease;
+
+    &__burger{
+        position: absolute;
+        right: 0;
+        top: .5rem;
+
+        //gonna use pseudo elements for the two other bars
+        &::before{
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 3px;
+            background-color: setTextcolor($primary-color);
+            @include transition-ease;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 20px;
+            height: 3px;
+            background-color: bsetTextcolor($primary-color);
+            @include transition-ease;
+        }
+
+        &.open{
+            transform: rotate(720deg);
+            background: transparent;
+
+            &::before{
+                transform: rotate(45deg) translate(5px,8px);
+            }
+
+            &::after{
+                width: 28px;
+                transform: rotate(-45deg) translate(3px,-7px);
+            }
+        }
+    }
+}
