@@ -1,10 +1,10 @@
 .menu-btn{
     position: absolute;
     z-index: 1;
-    top: 1rem;
     right: 1rem;
+    top: 1rem;
+    height: 20px;//fit-content;
     width: 28px;//fit-content;
-    height: 28px;//fit-content;
 
     cursor: pointer;
     @include transition-ease;
@@ -13,10 +13,14 @@
         position: absolute;
         right: 0;
         top: .5rem;
+        width: 28px;
+        height: 3px;
+        background: setTextColor($primary-color);
+        @include transition-ease;
 
         //gonna use pseudo elements for the two other bars
         &::before{
-            content: '';
+            content: none;
             position: absolute;
             top: -8px;
             width: 28px;
@@ -26,12 +30,12 @@
         }
 
         &::after{
-            content: '';
+            content: none;
             position: absolute;
             top: 8px;
             width: 20px;
             height: 3px;
-            background-color: bsetTextcolor($primary-color);
+            background-color: setTextcolor($primary-color);
             @include transition-ease;
         }
 

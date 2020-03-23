@@ -20,10 +20,10 @@
 .menu-btn {
   position: absolute;
   z-index: 1;
-  top: 1rem;
   right: 1rem;
+  top: 1rem;
+  height: 20px;
   width: 28px;
-  height: 28px;
   cursor: pointer;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -33,10 +33,15 @@
   position: absolute;
   right: 0;
   top: .5rem;
+  width: 28px;
+  height: 3px;
+  background: #273A3E;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .menu-btn__burger::before {
-  content: '';
+  content: none;
   position: absolute;
   top: -8px;
   width: 28px;
@@ -47,12 +52,12 @@
 }
 
 .menu-btn__burger::after {
-  content: '';
+  content: none;
   position: absolute;
   top: 8px;
   width: 20px;
   height: 3px;
-  background-color: bsetTextcolor(#827979);
+  background-color: setTextcolor(#827979);
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
@@ -101,7 +106,10 @@
 }
 
 .app .bottom {
+  font-size: 1rem;
   position: fixed;
   bottom: 0;
+  text-align: right;
+  color: #273A3E;
 }
 /*# sourceMappingURL=main.css.map */
