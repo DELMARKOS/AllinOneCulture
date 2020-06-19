@@ -6,6 +6,11 @@
   overflow: hidden;
 }
 
+:root {
+  font-size: 16px;
+  font-family: 'montserrat',sans-serif;
+}
+
 .app main .social-icons .fab {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
