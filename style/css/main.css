@@ -26,7 +26,7 @@ This is an implementation of the AllinOneCulture website
   .app .container-fluid .text .allinoneculture {
     text-align: center;
     font-size: 10vw;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
     font-weight: lighter;
     line-height: 2.5em;
   }
@@ -49,4 +49,11 @@ This is an implementation of the AllinOneCulture website
     text-decoration: none;
   }
 }
+@media (orientation: portrait) {
+  .app {
+    background-image: url("../../img/2.png");
+    background-size: cover;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
