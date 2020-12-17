@@ -17,8 +17,7 @@ This is an implementation of the AllinOneCulture website
   }
   .app .container-fluid {
     background-color: rgba(130, 121, 121, 0.77);
-    width: 100%;
-    height: 100vh;
+    background-size: cover;
   }
   .app .container-fluid .text {
     position: relative;
@@ -48,11 +47,9 @@ This is an implementation of the AllinOneCulture website
     margin: 0 10em;
     text-decoration: none;
   }
-}
-@media (orientation: portrait) {
-  .app {
-    background-image: url("../../img/2.png");
-    background-size: cover;
+  .app .container-fluid .footer {
+    position: fixed;
+    bottom: 0;
   }
 }
 
