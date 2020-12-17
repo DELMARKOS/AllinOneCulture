@@ -1,5 +1,6 @@
 const nameCng = document.getElementById('aioc');
 
+//Todo make this work!
 nameCng.addEventListener('onSmallSize', function (e) {
     nameCng.textContent = e.detail.textContent;//'AiOC';
 }, false);
