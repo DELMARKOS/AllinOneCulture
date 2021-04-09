@@ -13,19 +13,21 @@ This is an implementation of the AllinOneCulture website
 
 @media (orientation: landscape) {
     .app {
-        background-image: url("../../img/initial.png");
+
+        background-image: url("../../img/generic.png");
         background-size: cover;
         //object-fit: cover;
-
+    
         .container-fluid {
             background-color: rgba(130, 121, 121, 0.77); // 130, 121, 121, .77
             background-size: cover;
-
+            height: 100vh;
+    
             .text {
                 position: relative;
                 .allinoneculture {
                     text-align: center;
-                    font-size: 10vw;
+                    font-size: 20vw;
                     letter-spacing: 0.05em;
                     font-weight: lighter;
                     line-height: 2.5em;
@@ -41,10 +43,10 @@ This is an implementation of the AllinOneCulture website
                 line-height: 15em;
                 list-style-type: none;
                 text-align: center;
-
+    
                 .navbar-item {
-                    display: inline-block;
-
+                    display: inline-flex;
+    
                     a {
                         margin: 0 10em;
                         text-decoration: none;

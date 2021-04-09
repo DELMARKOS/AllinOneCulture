@@ -1,0 +1,19 @@
+{
+  "name": "allinoneculture",
+  "version": "0.0.1",
+  "description": "this is a website and not a containerized web app that we use to express our creative nature to the public and also gain information about whatever happens to catch our attention!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markdlp/AllinOneCulture.git"
+  },
+  "author": "Mark Delaportas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markdlp/AllinOneCulture/issues"
+  },
+  "homepage": "https://github.com/markdlp/AllinOneCulture#readme"
+}

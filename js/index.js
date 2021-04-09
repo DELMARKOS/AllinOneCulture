@@ -1,8 +1,7 @@
 function changeName() {
     document.getElementById('aioc').innerHTML =
-        (document.body.scrollWidth < 900) ? 'AiOC' : 'AllinOneCulture';
+        (window.innerHeight < window.innerWidth) ? 'AllinOneCulture' : 'AiOC';
 }
-
 function changeBackground(pos) {
     document.body.style.backgroundImage = "url('../img/" + pos + ".png')";
 }

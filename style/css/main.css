@@ -12,19 +12,20 @@ This is an implementation of the AllinOneCulture website
 
 @media (orientation: landscape) {
   .app {
-    background-image: url("../../img/initial.png");
+    background-image: url("../../img/generic.png");
     background-size: cover;
   }
   .app .container-fluid {
     background-color: rgba(130, 121, 121, 0.77);
     background-size: cover;
+    height: 100vh;
   }
   .app .container-fluid .text {
     position: relative;
   }
   .app .container-fluid .text .allinoneculture {
     text-align: center;
-    font-size: 10vw;
+    font-size: 20vw;
     letter-spacing: 0.05em;
     font-weight: lighter;
     line-height: 2.5em;
@@ -41,7 +42,9 @@ This is an implementation of the AllinOneCulture website
     text-align: center;
   }
   .app .container-fluid .sections .navbar-item {
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
   .app .container-fluid .sections .navbar-item a {
     margin: 0 10em;
@@ -52,5 +55,4 @@ This is an implementation of the AllinOneCulture website
     bottom: 0;
   }
 }
-
 /*# sourceMappingURL=main.css.map */
